@@ -1,0 +1,12 @@
+import pandas as pd
+
+df = pd.read_csv('Lifestyle_and_Health_Risk_Prediction_Synthetic_Dataset.csv')
+
+print("--- 檢視資料前 5 行 ---")
+print(df.head())
+
+print("\n--- 資料基本資訊 ---")
+print(df.info())
+
+print("\n--- 檢查是否有缺漏值 ---")
+print(df.isnull().sum())
